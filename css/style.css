@@ -1,0 +1,678 @@
+body,
+html {
+  font-family: "Lato", sans-serif; /* Texto principal */
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #3A506B; /* Azul Grisáceo para texto principal */
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif; /* Títulos y encabezados */
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-weight: 700; /* Más grueso para destacar */
+  font-size: 36px;
+  color: #3A506B; /* Azul Grisáceo para títulos */
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3A506B; /* Azul Grisáceo para subtítulos */
+}
+h4 {
+  font-size: 20px;
+  color: #3A506B; /* Azul Grisáceo para subtítulos */
+  font-weight: 600;
+}
+h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+}
+p {
+  font-size: 16px; /* Un poco más grande para mejor legibilidad */
+  line-height: 1.6; /* Espaciado para comodidad visual */
+}
+p.intro {
+  margin: 12px 0 0;
+  line-height: 24px;
+}
+a {
+  color: #5CA9FB; /* Azul claro para enlaces */
+  font-weight: 500;
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para enlaces */
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #3A506B; /* Azul Grisáceo para enlaces al pasar el mouse */
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+hr {
+  height: 2px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #5CA9FB; /* Azul claro para la línea horizontal */
+  margin-bottom: 20px;
+  border: 0;
+}
+/* Navigation */
+#menu {
+  padding: 15px;
+  transition: all 0.8s;
+}
+#menu.navbar-default {
+  background-color: #F7F7F7; /* Blanco Hueso para el fondo del menú */
+  border-color: rgba(231, 231, 231, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+#menu a.navbar-brand {
+  font-family: "Merriweather", serif; /* Tipografía serif para el logo */
+  font-size: 24px;
+  font-weight: 700;
+  color: #3A506B; /* Azul Grisáceo para el texto del logo */
+  text-transform: uppercase;
+}
+#menu.navbar-default .navbar-nav > li > a {
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para enlaces del menú */
+  text-transform: uppercase;
+  color: #3A506B; /* Azul Grisáceo para los enlaces del menú */
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 2px;
+  border-radius: 0;
+  margin: 9px 20px 0;
+}
+#menu.navbar-default .navbar-nav > li > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: #5CA9FB; /* Azul claro para el subrayado */
+  content: "";
+  transition: width 0.2s;
+}
+#menu.navbar-default .navbar-nav > li > a:hover:after {
+  width: 100%;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:after,
+.navbar-default .navbar-nav > .active > a:hover:after,
+.navbar-default .navbar-nav > .active > a:focus:after {
+  display: block !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -1px !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: #5CA9FB !important; /* Azul claro para el subrayado activo */
+  content: "" !important;
+  transition: width 0.2s !important;
+}
+.navbar-toggle {
+  border-radius: 0;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #F7F7F7; /* Blanco Hueso para el botón del menú */
+  border-color: #5CA9FB; /* Azul claro para el borde del botón */
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #5CA9FB; /* Azul claro para las barras del botón */
+}
+.section-title {
+  margin-bottom: 70px;
+}
+.section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  background: #5CA9FB; /* Azul claro para la línea debajo del título */
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+.section-title p {
+  font-size: 18px;
+}
+.btn-custom {
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para botones */
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5CA9FB; /* Azul claro para el botón */
+  background-image: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
+  padding: 14px 34px;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.5s linear;
+  border: 0;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-image: none;
+  background-color: #3A506B; /* Azul Grisáceo para el hover */
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+
+
+/* Header Section */
+.intro {
+  display: table;
+  width: 100%;
+  height: 95vh; /* Altura reducida */
+  max-height: 650px; /* Límite máximo */
+  min-height: 500px; /* Mínimo para móviles */
+  padding: 0;
+  background: url(../img/intro-bg.jpg) center 70% no-repeat; /* Recorte superior */
+  background-color: #D8DBE2;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+}
+
+.intro .overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle; /* Centrado vertical real */
+}
+
+header .intro-text {
+  padding-top: 0; /* Eliminamos el padding grande inicial */
+  padding-bottom: 50px; /* Reducción del espacio inferior */
+  text-align: center;
+  transform: translateY(140px); /* Ajuste fino de posición (sube/baja el texto) */
+}
+
+/* (Estilos originales preservados) */
+.intro h1 {
+  font-family: "Merriweather", serif;
+  color: #F7F7F7;
+  font-size: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.intro h1 span {
+  font-weight: 800;
+  color: #EAE0D5;
+}
+
+.intro p {
+  color: #F7F7F7;
+  font-size: 30px;
+  font-weight: 350;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 40px; /* Reducido para compactar */
+}
+
+
+/* Features Section */
+#features {
+  background: #F7F7F7; /* Blanco Hueso para el fondo de la sección */
+}
+#features i.fa {
+  font-size: 38px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  border-radius: 50%;
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%); /* Azul Grisáceo para el ícono */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* About Section */
+#about {
+  padding: 100px 0;
+  text-align: center; /* Centrado general del contenido */
+}
+#about h3 {
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+#about h2 {
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  text-align: center; /* Centrado del título */
+}
+#about h2::after {
+  position: absolute;
+  content: "";
+  background: #5CA9FB;
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 50%; /* Centrado de la línea decorativa */
+  transform: translateX(-50%); /* Ajuste fino de centrado */
+}
+#about .about-text {
+  max-width: 800px; /* Ancho máximo para mejor lectura */
+  margin: 0 auto; /* Centrado del texto */
+}
+#about .about-text li {
+  margin-bottom: 6px;
+  margin-left: 6px;
+  list-style: none;
+  padding: 0;
+  text-align: left; /* Alineación izquierda para items de lista */
+}
+#about .about-text li:before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  color: #5CA9FB;
+  font-size: 11px;
+  font-weight: 300;
+  padding-right: 8px;
+}
+#about img {
+  width: 300px; /* Tamaño por defecto (ajustable) */
+  height: auto; /* Mantiene proporciones */
+  border-radius: 15px; /* Bordes redondeados */
+  margin: 20px auto; /* Centrado vertical/horizontal */
+  display: block; /* Para que funcione margin auto */
+  background: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  object-fit: cover; /* Asegura que la imagen cubra el espacio */
+}
+#about p {
+  line-height: 24px;
+  margin: 30px 0;
+  text-align: left; /* Alineación izquierda para párrafos */
+}
+
+/* Clases adicionales para controlar tamaño de imagen (opcional) */
+.img-small {
+  width: 200px !important;
+}
+.img-medium {
+  width: 300px !important;
+}
+.img-large {
+  width: 400px !important;
+}
+
+
+
+
+/* Services Section */
+#services {
+  padding: 100px 0;
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
+  color: #fff;
+}
+
+/* Contenedor principal - Clave para el grid */
+#services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrado horizontal */
+  margin: 0 -15px; /* Compensa el padding de las columnas */
+}
+
+/* Columnas -  3 por fila */
+#services .col-md-4 {
+  flex: 0 0 calc(33.333% - 30px); /* 3 columnas con espacio */
+  max-width: calc(33.333% - 30px);
+  padding: 0 15px;
+  margin-bottom: 30px; /* Espacio entre filas */
+  display: flex; /* Para igualar alturas */
+}
+
+/* Items de servicio -  */
+.service-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  height: 100%; /* Altura completa */
+}
+
+/* Iconos  */
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto 20px; /* Centrado */
+}
+
+/* Textos  */
+#services h2 {
+  color: #fff;
+}
+#services .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  margin-left: -30px;
+  left: 50%;
+}
+#services h3 {
+  font-weight: 500;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: rgba(255, 255, 255, 0.75);
+}
+#services .service-desc {
+  margin: 10px 10px 20px;
+  flex-grow: 1; /* Fuerza igual altura */
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+}
+.portfolio-item {
+  margin: 1px -15px 0 -14px;
+  padding: 0;
+}
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: linear-gradient(
+    to right,
+    rgba(92, 169, 251, 0.8) 0%, /* Azul claro con transparencia */
+    rgba(58, 80, 107, 0.8) 100% /* Azul Grisáceo con transparencia */
+  );
+  padding: 30% 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+/* Testimonials Section */
+#testimonials {
+  padding: 100px 0;
+  background: #F7F7F7; /* Blanco Hueso para el fondo de la sección */
+}
+#testimonials i {
+  color: #D8DBE2; /* Gris Claro para los íconos */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Contact Section */
+#contact {
+  padding: 100px 0 60px;
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%); /* Azul Grisáceo para el fondo de la sección */
+  color: rgba(255, 255, 255, 0.75);
+}
+#contact .section-title {
+  margin-bottom: 40px;
+}
+#contact .section-title p {
+  font-size: 16px;
+}
+#contact h2 {
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+#contact .section-title p {
+  font-size: 25px;
+}
+
+#contact .section-title h2::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  height: 4px;
+  width: 60px;
+  bottom: 0;
+  left: 30px;
+}
+#contact h3 {
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+#contact form {
+  padding-top: 20px;
+}
+#contact .text-danger {
+  color: #cc0033;
+  text-align:center} 
+
+
+  /* galería (preguntas frecuentes) */
+.card-header {
+  transition: background-color 0.3s ease;
+}
+
+.card-header:hover {
+  background-color: #f0f8ff !important;
+}
+
+.card-body {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#faq {
+  padding: 100px 0;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+#faq .accordion {
+  max-height: none;
+  overflow: visible;
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tu diseño */
+}
+
+#faq .accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #D8DBE2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#faq .accordion-button {
+  background-color: white;
+  color: #3A506B;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  padding: 20px;
+  border: none;
+  text-align: left;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #5CA9FB;
+}
+
+#faq .accordion-button:after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #5CA9FB;
+  transform: none;
+}
+
+#faq .accordion-button:not(.collapsed):after {
+  content: '−';
+}
+
+#faq .accordion-body {
+  padding: 20px;
+  background-color: white;
+  color: #3A506B;
+  border-top: 1px solid #D8DBE2;
+}
+
+#faq .accordion-button:hover {
+  background-color: #f0f8ff;
+}
+
+
+
+
+/* Team Section */
+/*
+#team {
+  padding: 100px 0;
+}
+#team h4 {
+  margin: 5px 0;
+}
+#team .team-img {
+  width: 240px;
+}
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+*/

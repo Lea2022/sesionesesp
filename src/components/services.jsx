@@ -5,21 +5,28 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>Cómo trabajamos juntos</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            "Para que puedas sentirte cómodo y seguro en este proceso,
+            aquí te explico cómo funciona el trabajo juntos.
+            Desde el primer contacto hasta la forma en que nos comunicamos,
+            todo está diseñado para que tengas una experiencia clara y efectiva."
           </p>
         </div>
-        <div className="row">
+        {/* Contenedor de servicios con espaciado */}
+        <div className="row g-4">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <div className="service-desc">
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
+                <div 
+                  key={`${d.name}-${i}`}
+                  className="col-md-4 d-flex" // Uso de flexbox para alineación
+                >
+                  <div className="service-item p-3 h-100 w-100">
+                    <i className={`${d.icon} fs-3 mb-3 d-block`}></i>
+                    <div className="service-desc">
+                      <h3>{d.name}</h3>
+                      <p>{d.text}</p>
+                    </div>
                   </div>
                 </div>
               ))

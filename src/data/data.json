@@ -1,102 +1,72 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Sesiones Online",
+    "paragraph": "Coaching y orientación psicológica para hispanohablantes."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Soy Leandro Acuña, licenciado en Psicología en Argentina. Brindo coaching para hispanohablantes en Europa. Mi misión es ayudarte a enfrentar cambios, adaptarte a nuevas circunstancias y potenciar tu bienestar. A través de sesiones personalizadas, combino herramientas de coaching con mi formación en psicología para brindarte un acompañamiento efectivo y práctico.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Manejo del estrés y ansiedad",
+      "Adaptación a nuevos entornos",
+      "Toma de decisiones y resolución de conflictos",
+      "Comunicación y relaciones interpersonales"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Orientación vocacional y profesional",
+      "Gestión emocional",
+      "Manejo del miedo e inseguridad ante nuevos desafíos",
+      "Y mucho mas!"
     ]
   },
-  "Gallery": [
+  "Galery" : [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "question": "¿En qué se diferencia el coaching de la terapia psicológica?",
+      "answer": "El coaching se enfoca en el presente y en alcanzar objetivos concretos, mientras que la terapia trabaja aspectos más profundos de la salud mental."
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "question": "¿Cómo se programan las sesiones?",
+      "answer": "Puedes agendar directamente desde nuestro calendario online."
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "question": "¿Qué pasa si necesito cancelar?",
+      "answer": "Aceptamos cancelaciones con 24 horas de anticipación sin costo."
     }
   ],
+
+  
   "Services": [
-    {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
+  {
+    "icon": "fas fa-envelope-open-text fa-3x text-white mb-3",
+    "name": "Primer contacto",
+    "text": "Escríbeme por email o formulario para contarme tu situación."
+  },
+  {
+    "icon": "fas fa-calendar-check fa-3x text-white mb-3",
+    "name": "Agendar sesión",
+    "text": "Coordinamos día y horario según tus tiempos y la disponibilidad."
+  },
+  {
+    "icon": "fas fa-handshake fa-3x text-white mb-3",
+    "name": "Primera sesión (sin costo)",
+    "text": "Conocemos tu historia, necesidades y objetivos."
+  },
+  {
+    "icon": "fas fa-file-signature fa-3x text-white mb-3",
+    "name": "Acuerdo de trabajo",
+    "text": "Definimos la frecuencia y modalidad de las sesiones."
+  },
+  {
+    "icon": "fas fa-video fa-3x text-white mb-3",
+    "name": "Sesiones online",
+    "text": "Nos conectamos por Zoom en un espacio seguro y privado."
+  },
+  {
+    "icon": "fas fa-chart-line fa-3x text-white mb-3",
+    "name": "Seguimiento y evolución",
+    "text": "Evaluamos progresos y ajustamos el enfoque según avances."
+  }
   ],
+
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
@@ -129,56 +99,32 @@
       "name": "Johnathan Doe"
     }
   ],
-  "Team": [
-    {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    }
-  ],
+
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "phone": "+54 3541 590755",
+    "email": "sesionesesp@gmail.com",
+    "facebook": "fb.com"
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wifi",
+      "title": "Accesibilidad y Comodidad",
+      "text": "Disfruta sesiones online desde cualquier lugar de Europa, con flexibilidad horaria y acceso desde cualquier dispositivo."
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-comments",
+      "title": "Coaching en Español, sin Barreras",
+      "text": "Atención en tu idioma, con comprensión cultural y un enfoque pensado para hispanohablantes en Europa."
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-puzzle-piece",
+      "title": "Enfoque Personalizado y Práctico",
+      "text": "Métodos basados en psicología y coaching, con estrategias adaptadas a ti y herramientas aplicables en la vida diaria."
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-lock",
+      "title": "Confidencialidad y Profesionalismo",
+      "text": "Espacio seguro, acompañado por un profesional con formación en Psicología y un enfoque ético orientado a resultados."
     }
   ]
 }

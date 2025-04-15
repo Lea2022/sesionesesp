@@ -9,32 +9,56 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [isSending, setIsSending] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
   
+  const clearState = () => setState({ ...initialState });
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    setIsSending(true);
+    setStatusMessage("");
     
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+    {/* 
+      REEMPLAZA LOS SIGUIENTES VALORES CON TUS CREDENCIALES DE EMAILJS:
+      - serviceId: Encuéntralo en Email Services > Tu servicio
+      - templateId: En Email Templates > Tu plantilla
+      - publicKey: En Account > API Keys (Public Key)
+    */}
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(
+        "service_1njbxhf",      // Reemplazar con tu Service ID
+        "template_v1u5lzs",     // Reemplazar con tu Template ID
+        e.target,
+        "51rAJLF_T6ykWPwJf"       // Reemplazar con tu Public Key
+      )
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          setStatusMessage({ text: "¡Mensaje enviado con éxito!", isError: false });
+          
+          // Muestra el mensaje por 5 segundos
+          setTimeout(() => setStatusMessage(""), 5000);
         },
         (error) => {
           console.log(error.text);
+          setStatusMessage({ 
+            text: "Error al enviar el mensaje. Por favor inténtalo nuevamente.", 
+            isError: true 
+          });
         }
-      );
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
+
   return (
     <div>
       <div id="contact">
@@ -42,13 +66,22 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>📩 Contáctame</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Por favor, completa el siguiente formulario para enviarme un mensaje. 
+                  Te responderé lo antes posible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+
+              {/* Mensaje de estado del envío */}
+              {statusMessage && (
+                <div className={`alert ${statusMessage.isError ? "alert-danger" : "alert-success"}`}
+                  style={{ fontSize: '16px', marginBottom: '20px' }}>
+                  {statusMessage.text}
+                </div>
+              )}
+
+              <form name="sentMessage" noValidate onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -57,9 +90,12 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Nombre Completo"
                         required
+                        minLength="3"
+                        value={name}
                         onChange={handleChange}
+                        style={{ fontSize: '18px', padding: '15px' }}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -71,9 +107,12 @@ export const Contact = (props) => {
                         id="email"
                         name="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="ejemplo@email.com"
                         required
+                        value={email}
                         onChange={handleChange}
+                        style={{ fontSize: '18px', padding: '15px' }}
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -84,42 +123,63 @@ export const Contact = (props) => {
                     name="message"
                     id="message"
                     className="form-control"
-                    rows="4"
-                    placeholder="Message"
+                    rows="6"
+                    placeholder="Escribe tu mensaje aquí..."
                     required
+                    minLength="10"
+                    value={message}
                     onChange={handleChange}
+                    style={{ 
+                      fontSize: '18px', 
+                      padding: '15px', 
+                      minHeight: '180px',
+                      resize: 'vertical'
+                    }}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                <button 
+                  type="submit" 
+                  className="btn btn-custom btn-lg"
+                  disabled={isSending}
+                  style={{ 
+                    fontSize: '18px',
+                    padding: '12px 30px',
+                    marginTop: '15px',
+                    fontWeight: '600',
+                    opacity: isSending ? 0.7 : 1
+                  }}
+                >
+                  {isSending ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      {" Enviando..."}
+                    </>
+                  ) : "Enviar Mensaje"}
                 </button>
               </form>
             </div>
           </div>
+
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
+              <h3>Información de Contacto</h3>
+              <p style={{ fontSize: '16px' }}>
                 {props.data ? props.data.address : "loading"}
               </p>
             </div>
             <div className="contact-item">
-              <p>
+              <p style={{ fontSize: '16px' }}>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> WhatsApp:
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
             </div>
             <div className="contact-item">
-              <p>
+              <p style={{ fontSize: '16px' }}>
                 <span>
-                  <i className="fa fa-envelope-o"></i> Email
+                  <i className="fa fa-envelope-o"></i> Email:
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
@@ -152,11 +212,8 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+          <p style={{ fontSize: '16px' }}>
+            &copy; 2025 Leandro Acuña. Coaching en Español. Design by{" HeimerCoder"}
           </p>
         </div>
       </div>

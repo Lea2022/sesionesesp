@@ -1,9 +1,9 @@
 body,
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif; /* Texto principal */
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #3A506B; /* Azul Grisáceo para texto principal */
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
@@ -11,23 +11,23 @@ html {
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather", serif; /* Títulos y encabezados */
 }
 h2 {
   text-transform: uppercase;
   margin: 0 0 20px;
-  font-weight: 800;
+  font-weight: 700; /* Más grueso para destacar */
   font-size: 36px;
-  color: #333;
+  color: #3A506B; /* Azul Grisáceo para títulos */
 }
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  color: #333;
+  color: #3A506B; /* Azul Grisáceo para subtítulos */
 }
 h4 {
-  font-size: 18px;
-  color: #333;
+  font-size: 20px;
+  color: #3A506B; /* Azul Grisáceo para subtítulos */
   font-weight: 600;
 }
 h5 {
@@ -36,20 +36,22 @@ h5 {
   line-height: 20px;
 }
 p {
-  font-size: 15px;
+  font-size: 16px; /* Un poco más grande para mejor legibilidad */
+  line-height: 1.6; /* Espaciado para comodidad visual */
 }
 p.intro {
   margin: 12px 0 0;
   line-height: 24px;
 }
 a {
-  color: #608dfd;
-  font-weight: 400;
+  color: #5CA9FB; /* Azul claro para enlaces */
+  font-weight: 500;
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para enlaces */
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #608dfd;
+  color: #3A506B; /* Azul Grisáceo para enlaces al pasar el mouse */
 }
 ul,
 ol {
@@ -66,7 +68,7 @@ hr {
   width: 70px;
   text-align: center;
   position: relative;
-  background: #1e7a46;
+  background: #5CA9FB; /* Azul claro para la línea horizontal */
   margin-bottom: 20px;
   border: 0;
 }
@@ -76,23 +78,23 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  background-color: #F7F7F7; /* Blanco Hueso para el fondo del menú */
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 #menu a.navbar-brand {
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather", serif; /* Tipografía serif para el logo */
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #3A506B; /* Azul Grisáceo para el texto del logo */
   text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para enlaces del menú */
   text-transform: uppercase;
-  color: #555;
+  color: #3A506B; /* Azul Grisáceo para los enlaces del menú */
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 8px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -104,7 +106,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: #5CA9FB; /* Azul claro para el subrayado */
   content: "";
   transition: width 0.2s;
 }
@@ -125,7 +127,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: #5CA9FB !important; /* Azul claro para el subrayado activo */
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -134,11 +136,11 @@ hr {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #fff;
-  border-color: #608dfd;
+  background-color: #F7F7F7; /* Blanco Hueso para el botón del menú */
+  border-color: #5CA9FB; /* Azul claro para el borde del botón */
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #608dfd;
+  background-color: #5CA9FB; /* Azul claro para las barras del botón */
 }
 .section-title {
   margin-bottom: 70px;
@@ -152,7 +154,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #5CA9FB; /* Azul claro para la línea debajo del título */
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -163,11 +165,11 @@ hr {
   font-size: 18px;
 }
 .btn-custom {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif; /* Tipografía moderna para botones */
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: #5CA9FB; /* Azul claro para el botón */
+  background-image: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;
@@ -184,7 +186,7 @@ hr {
 .btn-custom.active {
   color: #fff;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #3A506B; /* Azul Grisáceo para el hover */
 }
 .btn:active,
 .btn.active {
@@ -203,50 +205,69 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
+
+
 /* Header Section */
 .intro {
   display: table;
   width: 100%;
+  height: 95vh; /* Altura reducida */
+  max-height: 650px; /* Límite máximo */
+  min-height: 500px; /* Mínimo para móviles */
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
-  background-color: #e5e5e5;
+  background: url(../img/intro-bg.jpg) center 70% no-repeat; /* Recorte superior */
+  background-color: #D8DBE2;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  overflow: hidden;
 }
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle; /* Centrado vertical real */
 }
+
+header .intro-text {
+  padding-top: 0; /* Eliminamos el padding grande inicial */
+  padding-bottom: 50px; /* Reducción del espacio inferior */
+  text-align: center;
+  transform: translateY(140px); /* Ajuste fino de posición (sube/baja el texto) */
+}
+
+/* (Estilos originales preservados) */
 .intro h1 {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  font-size: 82px;
+  font-family: "Merriweather", serif;
+  color: #F7F7F7;
+  font-size: 70px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 .intro h1 span {
   font-weight: 800;
-  color: #5ca9fb;
+  color: #EAE0D5;
 }
+
 .intro p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 300;
+  color: #F7F7F7;
+  font-size: 30px;
+  font-weight: 350;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px; /* Reducido para compactar */
 }
-header .intro-text {
-  padding-top: 350px;
-  padding-bottom: 200px;
-  text-align: center;
-}
+
+
 /* Features Section */
 #features {
-  background: #f6f6f6;
+  background: #F7F7F7; /* Blanco Hueso para el fondo de la sección */
 }
 #features i.fa {
   font-size: 38px;
@@ -257,12 +278,16 @@ header .intro-text {
   height: 100px;
   padding: 30px 0;
   border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%); /* Azul Grisáceo para el ícono */
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+
+
 /* About Section */
 #about {
   padding: 100px 0;
+  text-align: center; /* Centrado general del contenido */
 }
 #about h3 {
   font-size: 22px;
@@ -272,50 +297,116 @@ header .intro-text {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  text-align: center; /* Centrado del título */
 }
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: #5CA9FB;
   height: 4px;
   width: 60px;
   bottom: 0;
-  left: 0;
+  left: 50%; /* Centrado de la línea decorativa */
+  transform: translateX(-50%); /* Ajuste fino de centrado */
+}
+#about .about-text {
+  max-width: 800px; /* Ancho máximo para mejor lectura */
+  margin: 0 auto; /* Centrado del texto */
 }
 #about .about-text li {
   margin-bottom: 6px;
   margin-left: 6px;
   list-style: none;
   padding: 0;
+  text-align: left; /* Alineación izquierda para items de lista */
 }
 #about .about-text li:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #5ca9fb;
+  color: #5CA9FB;
   font-size: 11px;
   font-weight: 300;
   padding-right: 8px;
 }
 #about img {
-  width: 520px;
-  margin-top: 10px;
+  width: 300px; /* Tamaño por defecto (ajustable) */
+  height: auto; /* Mantiene proporciones */
+  border-radius: 15px; /* Bordes redondeados */
+  margin: 20px auto; /* Centrado vertical/horizontal */
+  display: block; /* Para que funcione margin auto */
   background: #fff;
-  border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  object-fit: cover; /* Asegura que la imagen cubra el espacio */
 }
 #about p {
   line-height: 24px;
   margin: 30px 0;
+  text-align: left; /* Alineación izquierda para párrafos */
 }
+
+/* Clases adicionales para controlar tamaño de imagen (opcional) */
+.img-small {
+  width: 200px !important;
+}
+.img-medium {
+  width: 300px !important;
+}
+.img-large {
+  width: 400px !important;
+}
+
+
+
+
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
   color: #fff;
 }
-#services .service-desc {
-  margin: 10px 10px 20px;
+
+/* Contenedor principal - Clave para el grid */
+#services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrado horizontal */
+  margin: 0 -15px; /* Compensa el padding de las columnas */
 }
+
+/* Columnas -  3 por fila */
+#services .col-md-4 {
+  flex: 0 0 calc(33.333% - 30px); /* 3 columnas con espacio */
+  max-width: calc(33.333% - 30px);
+  padding: 0 15px;
+  margin-bottom: 30px; /* Espacio entre filas */
+  display: flex; /* Para igualar alturas */
+}
+
+/* Items de servicio -  */
+.service-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 25px;
+  height: 100%; /* Altura completa */
+}
+
+/* Iconos  */
+#services i.fa {
+  font-size: 42px;
+  width: 120px;
+  height: 120px;
+  padding: 40px 0;
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%);
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 auto 20px; /* Centrado */
+}
+
+/* Textos  */
 #services h2 {
   color: #fff;
 }
@@ -329,16 +420,6 @@ header .intro-text {
   margin-left: -30px;
   left: 50%;
 }
-#services i.fa {
-  font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  border-radius: 50%;
-  color: #fff;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-}
 #services h3 {
   font-weight: 500;
   padding: 5px 0;
@@ -348,8 +429,10 @@ header .intro-text {
   color: rgba(255, 255, 255, 0.75);
 }
 #services .service-desc {
-  margin-bottom: 40px;
+  margin: 10px 10px 20px;
+  flex-grow: 1; /* Fuerza igual altura */
 }
+
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
@@ -370,8 +453,8 @@ header .intro-text {
   color: #fff;
   background: linear-gradient(
     to right,
-    rgba(99, 114, 255, 0.8) 0%,
-    rgba(92, 169, 251, 0.8) 100%
+    rgba(92, 169, 251, 0.8) 0%, /* Azul claro con transparencia */
+    rgba(58, 80, 107, 0.8) 100% /* Azul Grisáceo con transparencia */
   );
   padding: 30% 0 0;
   height: 100%;
@@ -402,10 +485,10 @@ header .intro-text {
 /* Testimonials Section */
 #testimonials {
   padding: 100px 0;
-  background: #f6f6f6;
+  background: #F7F7F7; /* Blanco Hueso para el fondo de la sección */
 }
 #testimonials i {
-  color: #e6e6e6;
+  color: #D8DBE2; /* Gris Claro para los íconos */
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -439,28 +522,11 @@ header .intro-text {
   font-weight: 600;
   color: #666;
 }
-/* Team Section */
-#team {
-  padding: 100px 0;
-}
-#team h4 {
-  margin: 5px 0;
-}
-#team .team-img {
-  width: 240px;
-}
-#team .thumbnail {
-  background: transparent;
-  border: 0;
-}
-#team .thumbnail .caption {
-  padding: 10px 0 0;
-  color: #888;
-}
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #5CA9FB 0%, #3A506B 100%); /* Azul Grisáceo para el fondo de la sección */
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -471,10 +537,15 @@ header .intro-text {
 }
 #contact h2 {
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 15px;
   padding-bottom: 15px;
 }
+
+#contact .section-title p {
+  font-size: 25px;
+}
+
 #contact .section-title h2::after {
   position: absolute;
   content: "";
@@ -496,111 +567,112 @@ header .intro-text {
 }
 #contact .text-danger {
   color: #cc0033;
-  text-align: left;
-}
-#contact .btn-custom {
-  margin: 30px 0;
-  background: transparent;
-  border: 2px solid #fff;
-}
-#contact .btn-custom:hover {
-  color: #1f386e;
-  background: #fff;
-}
-label {
-  font-size: 12px;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  float: left;
-}
-#contact .form-control {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #444;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ddd;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-#contact .form-control:focus {
-  border-color: #999;
-  outline: 0;
-  -webkit-box-shadow: transparent;
-  box-shadow: transparent;
-}
-.form-control::-webkit-input-placeholder {
-  color: #777;
-}
-.form-control:-moz-placeholder {
-  color: #777;
-}
-.form-control::-moz-placeholder {
-  color: #777;
-}
-.form-control:-ms-input-placeholder {
-  color: #777;
-}
-#contact .contact-item {
-  margin: 20px 0;
-}
-#contact .contact-item span {
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 10px;
-  display: block;
-}
-#contact .contact-item i.fa {
-  margin-right: 10px;
-}
-#contact .social {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  padding-top: 50px;
-  margin-top: 50px;
-  text-align: center;
-}
-#contact .social ul li {
-  display: inline-block;
-  margin: 0 20px;
-}
-#contact .social i.fa {
-  font-size: 22px;
-  width: 48px;
-  height: 48px;
-  padding: 12px 0;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
-#contact .social i.fa:hover {
-  color: #608dfd;
-  background: #fff;
-}
-/* Footer Section*/
-#footer {
-  background: #f6f6f6;
-  padding: 30px 0;
-}
-#footer p {
-  color: #888;
-  font-size: 14px;
-}
-#footer a {
-  color: #608dfd;
-}
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
+  text-align:center} 
+
+
+  /* galería (preguntas frecuentes) */
+.card-header {
+  transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  #about img {
-    margin: 50px 0;
+.card-header:hover {
+  background-color: #f0f8ff !important;
+}
+
+.card-body {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+#faq {
+  padding: 100px 0;
+  background: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+#faq .accordion {
+  max-height: none;
+  overflow: visible;
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tu diseño */
+}
+
+#faq .accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #D8DBE2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#faq .accordion-button {
+  background-color: white;
+  color: #3A506B;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  padding: 20px;
+  border: none;
+  text-align: left;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: white;
+  color: #5CA9FB;
+}
+
+#faq .accordion-button:after {
+  content: '+';
+  font-size: 1.5rem;
+  color: #5CA9FB;
+  transform: none;
+}
+
+#faq .accordion-button:not(.collapsed):after {
+  content: '−';
+}
+
+#faq .accordion-body {
+  padding: 20px;
+  background-color: white;
+  color: #3A506B;
+  border-top: 1px solid #D8DBE2;
+}
+
+#faq .accordion-button:hover {
+  background-color: #f0f8ff;
+}
+
+
+
+
+/* Team Section */
+/*
+#team {
+  padding: 100px 0;
+}
+#team h4 {
+  margin: 5px 0;
+}
+#team .team-img {
+  width: 240px;
+}
+#team .thumbnail {
+  background: transparent;
+  border: 0;
+}
+#team .thumbnail .caption {
+  padding: 10px 0 0;
+  color: #888;
+}
+*/

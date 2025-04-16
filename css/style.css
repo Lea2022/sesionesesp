@@ -358,6 +358,7 @@ header .intro-text {
 
 
 
+
 /* Services Section */
 #services {
   padding: 100px 0;
@@ -365,24 +366,21 @@ header .intro-text {
   color: #fff;
 }
 
-/* Contenedor principal - Clave para el grid */
 #services .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centrado horizontal */
-  margin: 0 -15px; /* Compensa el padding de las columnas */
+  justify-content: center;
+  margin: 0 -15px;
 }
 
-/* Columnas -  3 por fila */
 #services .col-md-4 {
-  flex: 0 0 calc(33.333% - 30px); /* 3 columnas con espacio */
+  flex: 0 0 calc(33.333% - 30px);
   max-width: calc(33.333% - 30px);
   padding: 0 15px;
-  margin-bottom: 30px; /* Espacio entre filas */
-  display: flex; /* Para igualar alturas */
+  margin-bottom: 30px;
+  display: flex;
 }
 
-/* Items de servicio -  */
 .service-item {
   width: 100%;
   display: flex;
@@ -390,10 +388,9 @@ header .intro-text {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 25px;
-  height: 100%; /* Altura completa */
+  height: 100%;
 }
 
-/* Iconos  */
 #services i.fa {
   font-size: 42px;
   width: 120px;
@@ -403,13 +400,13 @@ header .intro-text {
   border-radius: 50%;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-  margin: 0 auto 20px; /* Centrado */
+  margin: 0 auto 20px;
 }
 
-/* Textos  */
 #services h2 {
   color: #fff;
 }
+
 #services .section-title h2::after {
   position: absolute;
   content: "";
@@ -420,18 +417,37 @@ header .intro-text {
   margin-left: -30px;
   left: 50%;
 }
+
 #services h3 {
   font-weight: 500;
   padding: 5px 0;
   color: #fff;
 }
+
 #services p {
   color: rgba(255, 255, 255, 0.75);
 }
+
 #services .service-desc {
   margin: 10px 10px 20px;
-  flex-grow: 1; /* Fuerza igual altura */
+  flex-grow: 1;
 }
+
+/* ✅ RESPONSIVE: En celulares, los items van uno debajo del otro */
+@media (max-width: 768px) {
+  #services .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* Portfolio Section */
 #portfolio {

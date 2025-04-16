@@ -373,12 +373,12 @@ header .intro-text {
   margin: 0 -15px;
 }
 
-#services .col-md-4 {
-  flex: 0 0 calc(33.333% - 30px);
-  max-width: calc(33.333% - 30px);
-  padding: 0 15px;
-  margin-bottom: 30px;
+#services .col-12,
+#services .col-sm-6,
+#services .col-lg-4 {
+  padding: 15px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .service-item {
@@ -433,13 +433,7 @@ header .intro-text {
   flex-grow: 1;
 }
 
-/* ✅ RESPONSIVE: En celulares, los items van uno debajo del otro */
-@media (max-width: 768px) {
-  #services .col-md-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
+
 
 
 

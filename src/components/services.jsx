@@ -19,7 +19,7 @@ export const Services = (props) => {
             ? props.data.map((d, i) => (
                 <div 
                   key={`${d.name}-${i}`}
-                  className="col-12 col-md-4 d-flex" // 👈 col-12 para móviles, col-md-4 para pantallas medianas en adelante
+                  className="col-12 col-sm-6 col-lg-4 d-flex"
                 >
                   <div className="service-item p-3 h-100 w-100">
                     <i className={`${d.icon} fs-3 mb-3 d-block`}></i>

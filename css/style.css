@@ -1,4 +1,5 @@
 body,
+
 html {
   font-family: "Lato", sans-serif; /* Texto principal */
   text-rendering: optimizeLegibility !important;
@@ -7,7 +8,9 @@ html {
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
+  scroll-behavior: smooth; /* 🎯 Transición suave al hacer clic en anclas */
 }
+
 h2,
 h3,
 h4 {

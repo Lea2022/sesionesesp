@@ -4,18 +4,18 @@
     "paragraph": "Coaching y orientación psicológica para hispanohablantes."
   },
   "About": {
-    "paragraph": "Soy Leandro Acuña, licenciado en Psicología en Argentina. Brindo coaching para hispanohablantes en Europa. Mi misión es ayudarte a enfrentar cambios, adaptarte a nuevas circunstancias y potenciar tu bienestar. A través de sesiones personalizadas, combino herramientas de coaching con mi formación en psicología para brindarte un acompañamiento efectivo y práctico.",
+    "paragraph": "Soy Leandro Acuña, licenciado en Psicología en Argentina. Brindo un servicio de atención psicológica online. Mi misión es ayudarte a enfrentar cambios, adaptarte a nuevas circunstancias y potenciar tu bienestar. A través de sesiones personalizadas, combino herramientas de coaching con mi formación en psicología para brindarte un acompañamiento efectivo y práctico.",
     "Why": [
-      "Manejo del estrés y ansiedad",
-      "Adaptación a nuevos entornos",
-      "Toma de decisiones y resolución de conflictos",
-      "Comunicación y relaciones interpersonales"
+      "Manejo del estrés y ansiedad.",
+      "Adaptación a nuevos entornos.",
+      "Toma de decisiones y resolución de conflictos.",
+      "Comunicación y relaciones interpersonales."
     ],
     "Why2": [
-      "Orientación vocacional y profesional",
-      "Gestión emocional",
-      "Manejo del miedo e inseguridad ante nuevos desafíos",
-      "Y mucho mas!"
+      "Orientación vocacional y profesional.",
+      "Gestión emocional.",
+      "Manejo del miedo e inseguridad ante nuevos desafíos."
+      
     ]
   },
   "Galery" : [
@@ -113,8 +113,8 @@
     },
     {
       "icon": "fa fa-comments",
-      "title": "Coaching en Español, sin Barreras",
-      "text": "Atención en tu idioma, con comprensión cultural y un enfoque pensado para hispanohablantes en Europa."
+      "title": "Sesiones en Español, sin Barreras",
+      "text": "Atención en tu idioma, con comprensión cultural y un enfoque pensado para hispanohablantes."
     },
     {
       "icon": "fa fa-puzzle-piece",
